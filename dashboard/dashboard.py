@@ -6,6 +6,8 @@ import streamlit as st
 import urllib
 from func import DataAnalyzer, BrazilMapPlotter
 
+from babel.numbers import format_currency
+
 sns.set(style='dark')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
@@ -62,9 +64,6 @@ st.header("E-Commerce Dashboard :convenience_store:")
 st.subheader("Daily Orders")
 
 col1, col2 = st.columns(2)
-
-# Set the locale to Indonesian (Bahasa Indonesia)
-locale.setlocale(locale.LC_ALL, 'id_ID')
 
 with col1:
     total_order = daily_orders_df["order_count"].sum()
