@@ -68,7 +68,7 @@ with col1:
     st.markdown(f"Total Order: **{total_order}**")
 
 with col2:
-    total_revenue = format_currency(daily_orders_df["revenue"].sum()
+    total_revenue = format_currency(daily_orders_df["revenue"].sum())  # Add closing parenthesis here
     st.markdown(f"Total Revenue: **{total_revenue}**")
 
 fig, ax = plt.subplots(figsize=(12, 6))
@@ -88,11 +88,11 @@ st.subheader("Customer Spend Money")
 col1, col2 = st.columns(2)
 
 with col1:
-    total_spend = format_currency(sum_spend_df["total_spend"].sum()
+    total_spend = format_currency(sum_spend_df["total_spend"].sum())  # Add closing parenthesis here
     st.markdown(f"Total Spend: **{total_spend}**")
 
 with col2:
-    avg_spend = format_currency(sum_spend_df["total_spend"].mean()
+    avg_spend = format_currency(sum_spend_df["total_spend"].mean())  # Add closing parenthesis here
     st.markdown(f"Average Spend: **{avg_spend}**")
 
 fig, ax = plt.subplots(figsize=(12, 6))
