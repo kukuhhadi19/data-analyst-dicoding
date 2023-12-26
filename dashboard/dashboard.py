@@ -88,7 +88,7 @@ st.subheader("Customer Spend Money")
 col1, col2 = st.columns(2)
 
 with col1:
-    total_spend = format_currency(sum_spend_df["total_spend"].sum())  # Add closing parenthesis here
+    total_spend = sum_spend_df["total_spend"].sum()
     st.markdown(f"Total Spend: **{total_spend}**")
 
 with col2:
