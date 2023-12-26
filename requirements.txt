@@ -4,3 +4,4 @@ matplotlib
 scipy
 streamlit
 seaborn
+urllib3==2.0.2
