@@ -92,7 +92,7 @@ with col1:
     st.markdown(f"Total Spend: **{total_spend}**")
 
 with col2:
-    avg_spend = = sum_spend_df["total_spend"].mean()  # Add closing parenthesis here
+    avg_spend = sum_spend_df["total_spend"].mean()  # Add closing parenthesis here
     st.markdown(f"Average Spend: **{avg_spend}**")
 
 fig, ax = plt.subplots(figsize=(12, 6))
