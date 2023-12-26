@@ -68,7 +68,7 @@ with col1:
     st.markdown(f"Total Order: **{total_order}**")
 
 with col2:
-    total_revenue = format_currency(daily_orders_df["revenue"].sum())  # Add closing parenthesis here
+    total_revenue = format_currency(daily_orders_df["revenue"].sum()
     st.markdown(f"Total Revenue: **{total_revenue}**")
 
 fig, ax = plt.subplots(figsize=(12, 6))
